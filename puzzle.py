@@ -34,12 +34,12 @@ def getClauses(mat, lavars, ih, iw):
     k = mat[ih][iw]
     n = len(getAllAdj(mat, lvars, ih, iw))
 
-    # Case 1: K+1
+    # Case 1: K + 1
     for i in itertools.combinations(getAllAdj(mat, -lvars, ih, iw),k+1):
         i = [int(x) for x in list(i)]
         clauses.append(i)
 
-    # Case 2: so o ke - K +1
+    # Case 2: number of adjacent cells - K + 1
     for j in itertools.combinations(getAllAdj(mat, lvars, ih, iw),n-k+1):
         j = [int(x) for x in list(j)]
         clauses.append(j)
