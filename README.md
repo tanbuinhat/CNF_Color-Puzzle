@@ -1,6 +1,6 @@
 # Resolution_CNF
 
-This is my AI homework in University of Science in VietNam
+This is my AI homework in University of Science in VietNam. My teacher wrote me the necessary function. I only have to write getClause() function
 
 
 Given a matrix of size m x n, where each cell will be a non-negative integer or have no value (empty cell). Each cell will have 8 adjacent cells, and here the cell itself is counted as adjacent to itself. The player will have to paint red and blue in all the cells on the matrix, so that the number of "adjacent" blue squares to a correct square is equal to the number inside that cell. 
